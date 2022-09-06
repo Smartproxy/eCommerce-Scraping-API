@@ -9,6 +9,7 @@
 - [Idealo](#idealo)
 - [Wayfair](#wayfair)
 - [Targets](#targets)
+- [Parameters](#parameters)
 - [License](#license)
 
 ## Introduction
@@ -601,6 +602,16 @@ wayfair
 wayfair_search
 ```
 
+## Parameters
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `target` | `string` |  Data source. Available targets are listed [here](#targets). |
+| `url` | `url` | Direct URL (link) |
+| `locale` | `string` | This will change the web interface language. Example: – en-US – en-GB |
+| `geo` | `string` | The geographical location that the result depends on. City location names, state names, country names, coordinates and radius, Google’s Canonical |
+| `device_type` | `string` | Device type and browser. Supported: ```desktop```, ```desktop_chrome```, ```desktop_firefox```, ```mobile```, ```mobile_android```, ```mobile_ios```. |
+| `headless` | `string` | Enable JavaScript rendering. Supported: ```html```, ```png``` |
 
 ## License
 
