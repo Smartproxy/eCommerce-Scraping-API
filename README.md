@@ -10,6 +10,7 @@
 - [Wayfair](#wayfair)
 - [Targets](#targets)
 - [Parameters](#parameters)
+- [Response Codes](#response-codes)
 - [License](#license)
 
 ## Introduction
@@ -612,6 +613,37 @@ wayfair_search
 | `geo` | `string` | The geographical location that the result depends on. City location names, state names, country names, coordinates and radius, Google’s Canonical |
 | `device_type` | `string` | Device type and browser. Supported: ```desktop```, ```desktop_chrome```, ```desktop_firefox```, ```mobile```, ```mobile_android```, ```mobile_ios```. |
 | `headless` | `string` | Enable JavaScript rendering. Supported: ```html```, ```png``` |
+
+## Response Codes
+
+### HTTP Response Codes
+
+| Response | Description     | Solution                |
+| :-------- | :------- | :------------------------- |
+| **200** - Success | Server has replied and given requested response.	 | Celebrate! |
+| **204** - No content | Job not completed yet. | Wait a few seconds before trying again. |
+| **400** - Multiple error messages | Bad structure of the request. | Re-check your request to make sure it is in the correct format. |
+| **401** - Invalid / not provided authorization header (client not found) | Incorrect login credentials or missing authorization. | Re-check your provided credentials for authorization. |
+| **403** - Forbidden | Your account does not have access to this resource. | Make sure the target is supported by us |
+| **404** - Not found | Your target was not found. | Re-check your targeted URL. |
+| **429** - Too many requests | Exceeded rate limit for your subscription. | Make sure you still have at least one request left. Wait a couple minutes and try again. If you are encountering the error often – chat with us to see if your rate limit can be increased. |
+| **500** - Internal error | Service unavailable, possibly due to some issues we are encountering. | Wait a couple minutes and send another request. Contact us for more information. |
+| **524** - Timeout | Service unavailable, possibly due to some issues we are encountering. | Wait a couple minutes and send another request. Contact us for more information. |
+
+### Parsed Result Response Codes
+
+| Response | Description |
+| :-------- | :------- | 
+| **12000** - Success | Server has replied and given the requested response. |
+| **12002** - Error | Parsing has failed completely. |
+| **12003** - Not supported | Targeted website parsing is not supported. |
+| **12004** - Response not full | Some fields were not parsed and are missing. |
+| **12005** - Response not fully parsed | Some fields might not have been parsed and are returned unparsed. |
+| **12006** - Error | Unexpected error. Let us know the task ID and we will check what went wrong. |
+| **12007** - Unknown | We could not determine whether the data was parsed correctly. |
+| **12008** - Error | Failed to parse all the data. |
+| **12009** - Error | Target not found. Make sure the parameters you passed are correct and supported. |
+
 
 ## License
 
