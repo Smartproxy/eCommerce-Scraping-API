@@ -11,6 +11,7 @@
 - [Targets](#targets)
 - [Parameters](#parameters)
 - [Response Codes](#response-codes)
+- [Postman Collection](#postman-collection)
 - [License](#license)
 
 ## Introduction
@@ -644,6 +645,9 @@ wayfair_search
 | **12008** - Error | Failed to parse all the data. |
 | **12009** - Error | Target not found. Make sure the parameters you passed are correct and supported. |
 
+## Postman Collection
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/59d624693859df624bc6?action=collection%2Fimport)
 
 ## License
 
