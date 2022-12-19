@@ -650,7 +650,7 @@ wayfair_search
 
 ## Postman Collection
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/59d624693859df624bc6?action=collection%2Fimport)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/23304112-92a123e7-171c-497e-8ca1-57eff04361f3?action=collection%2Ffork&collection-url=entityId%3D23304112-92a123e7-171c-497e-8ca1-57eff04361f3%26entityType%3Dcollection%26workspaceId%3D52705bab-433c-4fbf-afce-ccbfc97430fe)
 
 
 ## License
