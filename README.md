@@ -600,6 +600,7 @@ amazon_pricing
 amazon_reviews
 amazon_questions
 amazon_search
+amazon_sellers
 idealo
 idealo_search
 idealo_product
