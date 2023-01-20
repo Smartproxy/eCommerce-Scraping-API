@@ -8,7 +8,6 @@
 - [Introduction](#introduction)
 - [Authentication](#authentication)
 - [Amazon](#amazon)
-- [Aliexpress](#aliexpress)
 - [Idealo](#idealo)
 - [Wayfair](#wayfair)
 - [Targets](#targets)
@@ -444,47 +443,6 @@ Retrieve Amazon listings by supplying your query to the Amazon search bar.
 | Python                  | [python/amazonsearch.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/amazonsearch.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonsearch.py > amazonsearch.py ``` |
 | PHP                 | [php/amazonsearch.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/amazonsearch.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/amazonsearch.php > amazonsearch.php  ``` |
 | Node.js                 | [nodejs/amazonsearch.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/amazonsearch.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/amazonsearch.js > amazonsearch.js ``` |
-
-## Aliexpress
-
-Aliexpress can be targeted either using direct URL or by using the query parameter and providing product ID to the Aliexpress search bar.
-
-### Target: ```aliexpress``` (not parseable)
-Required parameters: ```url```
-
-Target by supplying direct URL link.
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `url` | `url` |  Aliexpress search URL |
-| `target` | `string` | Scraping target |
-
-### Examples
-
-| Programming Language | Example location         | Download |
-| -------------------- | ------------------------ | -------- |
-| Python                  | [python/aliexpress.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/aliexpress.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/aliexpress.py > aliexpress.py ``` |
-| PHP                 | [php/aliexpress.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/aliexpress.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/aliexpress.php > aliexpress.php  ``` |
-| Node.js                 | [nodejs/aliexpress.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/aliexpress.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/aliexpress.js > aliexpress.js ``` |
-
-
-### Target: ```aliexpress_product``` (not parseable)
-Required parameters: ```query```
-
-Target by supplying Aliexpress product ID using the query parameter.
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `query` | `string` |  Aliexpress search query |
-| `target` | `string` | Scraping target |
-
-### Examples
-
-| Programming Language | Example location         | Download |
-| -------------------- | ------------------------ | -------- |
-| Python                  | [python/aliexpressproduct.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/aliexpressproduct.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/aliexpressproduct.py > aliexpressproduct.py ``` |
-| PHP                 | [php/aliexpressproduct.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/aliexpressproduct.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/aliexpressproduct.php > aliexpressproduct.php  ``` |
-| Node.js                 | [nodejs/aliexpressproduct.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/aliexpressproduct.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/aliexpressproduct.js > aliexpressproduct.js ``` |
 
 ## Idealo
 
