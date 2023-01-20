@@ -18,7 +18,7 @@
 
 ## Introduction
 
-With our eCommerce Scraping API, you can gather most important data from eCommerce websites. Most notably and in depth, Amazon, but also websites like Aliexpress, Idealo, and Wayfair.
+With our eCommerce Scraping API, you can gather most important data from eCommerce websites. Most notably and in depth, Amazon, but also websites like Idealo and Wayfair.
 ## Authentication
 
 Once you have an active eCommerce subscription, you can try sending a request right from the dashboard eCommerce > Authentication method tab simply by entering your username, password, and clicking on Generate. You will also see an example of curl request generated right below your entered user:pass.
