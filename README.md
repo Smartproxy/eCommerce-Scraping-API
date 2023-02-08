@@ -8,7 +8,6 @@
 - [Introduction](#introduction)
 - [Authentication](#authentication)
 - [Amazon](#amazon)
-- [Idealo](#idealo)
 - [Wayfair](#wayfair)
 - [Targets](#targets)
 - [Parameters](#parameters)
@@ -444,64 +443,6 @@ Retrieve Amazon listings by supplying your query to the Amazon search bar.
 | PHP                 | [php/amazonsearch.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/amazonsearch.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/amazonsearch.php > amazonsearch.php  ``` |
 | Node.js                 | [nodejs/amazonsearch.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/amazonsearch.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/amazonsearch.js > amazonsearch.js ``` |
 
-## Idealo
-
-Idealo can be targeted using direct URL, by providing the query parameter to the Idealo search bar, or by providing the Idealo product ID.
-
-### Target: ```idealo``` (not parseable)
-Required parameters: ```url```
-
-Target by supplying direct URL link.
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `url` | `url` |  Idealo product URL |
-| `target` | `string` | Scraping target |
-
-### Examples
-
-| Programming Language | Example location         | Download |
-| -------------------- | ------------------------ | -------- |
-| Python                  | [python/idealo.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/idealo.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/idealo.py > idealo.py ``` |
-| PHP                 | [php/idealo.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/idealo.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/idealo.php > idealo.php  ``` |
-| Node.js                 | [nodejs/idealo.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/idealo.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/idealo.js > idealo.js ``` |
-
-
-### Target: ```idealo_search``` (not parseable)
-Required parameters: ```query```
-
-Target by supplying query parameter to the Idealo search bar.
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `query` | `string` |  Idealo search query |
-| `target` | `string` | Scraping target |
-
-### Examples
-
-| Programming Language | Example location         | Download |
-| -------------------- | ------------------------ | -------- |
-| Python                  | [python/idealosearch.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/idealosearch.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/idealosearch.py > idealosearch.py ``` |
-| PHP                 | [php/idealosearch.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/idealosearch.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/idealosearch.php > idealosearch.php  ``` |
-| Node.js                 | [nodejs/idealosearch.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/idealosearch.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/idealosearch.js > idealosearch.js ``` |
-
-### Target: ```idealo_product``` (not parseable)
-Required parameters: ```query```
-
-Target by supplying Idealo product ID directly.
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `query` | `string` |  Idealo product ID |
-| `target` | `string` | Scraping target |
-
-### Examples
-
-| Programming Language | Example location         | Download |
-| -------------------- | ------------------------ | -------- |
-| Python                  | [python/idealoproduct.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/idealoproduct.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/idealoproduct.py > idealoproduct.py ``` |
-| PHP                 | [php/idealoproduct.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/idealoproduct.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/idealoproduct.php > idealoproduct.php  ``` |
-| Node.js                 | [nodejs/idealoproduct.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/idealoproduct.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/idealoproduct.js > idealoproduct.js ``` |
 
 ## Wayfair
 
