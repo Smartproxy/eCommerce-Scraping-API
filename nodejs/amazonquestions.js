@@ -1,24 +1,18 @@
-const request = require('request');
+const response = await fetch(
+    'https://scrape.smartproxy.com/v1/tasks', {
+        method: 'POST',
+        body: {
+            target: 'amazon_questions',
+            parse: true,
+            query: 'B09H74FXNW'
+        },
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic AUTH'
+        },
+    }
+).catch(error => console.log(error));
 
-const username = 'YOUR_USERNAME';
-const password = 'YOUR_PASSWORD';
+console.log(response)
 
-const options = {
-  method: 'POST',
-  url: 'https://scrape.smartproxy.com/v1/tasks',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'Basic ' + Buffer.from(username + ':' + password).toString('base64')
-  },
-  body: JSON.stringify({
-    target: 'amazon_questions',
-    parse: true,
-    query: 'B09H74FXNW'
-  })
-};
 
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
-
-  console.log(body);
-});
