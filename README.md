@@ -9,6 +9,7 @@
 - [Authentication](#authentication)
 - [Amazon](#amazon)
 - [Wayfair](#wayfair)
+- [Other Sites](#other sites)
 - [Targets](#targets)
 - [Parameters](#parameters)
 - [Response Codes](#response-codes)
@@ -443,6 +444,26 @@ Retrieve Amazon listings by supplying your query to the Amazon search bar.
 | PHP                 | [php/amazonsearch.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/amazonsearch.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/amazonsearch.php > amazonsearch.php  ``` |
 | Node.js                 | [nodejs/amazonsearch.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/amazonsearch.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/amazonsearch.js > amazonsearch.js ``` |
 
+### Target: ```amazon_bestsellers```(parseable)
+
+Required parameters: ```query```
+
+Retrieve Amazon listings by supplying your query to the Amazon search bar.
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `query` | `string` |  Bestseller category ID |
+| `target` | `string` | Scraping target |
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/amazonbestsellers.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/amazonbestsellers.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/amazonbestsellers.py > amazonbestsellers.py ``` |
+| PHP                 | [php/amazonbestsellers.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/amazonbestsellers.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/amazonbestsellers.php > amazonbestsellers.php  ``` |
+| Node.js                 | [nodejs/amazonbestsellers.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/amazonbestsellers.js)  | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/amazonbestsellers.js > amazonbestsellers.js ``` |
+
+
 
 ## Wayfair
 
@@ -485,14 +506,34 @@ Target by supplying query parameter to the Wayfair search bar.
 | PHP                 | [php/wayfairsearch.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/wayfairsearch.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/wayfairsearch.php > wayfairsearch.php  ``` |
 | Node.js                 | [nodejs/wayfairsearch.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/wayfairsearch.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/wayfairsearch.js > wayfairsearch.js ``` |
 
+## Other Sites
 
+Retrieve results from **any** eCommerce website by supplying a full URL of the website to the url parameter. In this case, additional parameters can be specified in the URL itself.
+
+### Target: ```ecommerce``` (mostly parseable (Using AI parser))
+Required parameters: ```url```
+
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `url` | `string` |  Ecommerce site url |
+| `target` | `string` | Scraping target |
+
+
+Note that to get a result with the AI parser, you will need to set the ```parse``` parameter as ```'true'``` and ```parser_type``` parameter as ```ecommerce_product```.
+
+### Examples
+
+| Programming Language | Example location         | Download |
+| -------------------- | ------------------------ | -------- |
+| Python                  | [python/ecommerce.py](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/python/ecommerce.py) |``` curl hhttps://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/python/ecommerce.py > ecommerce.py ``` |
+| PHP                 | [php/ecommerce.php](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/php/ecommerce.php)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/php/ecommerce.php > ecommerce.php  ``` |
+| Node.js                 | [nodejs/ecommerce.js](https://github.com/Smartproxy/eCommerce-Scraping-API/blob/main/nodejs/ecommerce.js)   | ``` curl https://raw.githubusercontent.com/Smartproxy/eCommerce-Scraping-API/main/nodejs/ecommerce.js > ecommerce.js ``` |
 
 ## Targets
 
 ### List of supported targets for the 'target' parameter
 ```
-aliexpress
-aliexpress_product
 amazon
 amazon_product
 amazon_pricing
@@ -500,11 +541,10 @@ amazon_reviews
 amazon_questions
 amazon_search
 amazon_sellers
-idealo
-idealo_search
-idealo_product
+amazon_bestsellers
 wayfair
 wayfair_search
+ecommerce
 ```
 
 ## Parameters
@@ -517,6 +557,7 @@ wayfair_search
 | `geo` | `string` | The geographical location that the result depends on. City location names, state names, country names, coordinates and radius, Google’s Canonical |
 | `device_type` | `string` | Device type and browser. Supported: ```desktop```, ```desktop_chrome```, ```desktop_firefox```, ```mobile```, ```mobile_android```, ```mobile_ios```. |
 | `headless` | `string` | Enable JavaScript rendering. Supported: ```html```, ```png``` |
+| `parser_type` | `string` | Enable product page parsing for ```ecommerce``` target  |
 
 ## Response Codes
 
