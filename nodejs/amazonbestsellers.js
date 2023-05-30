@@ -1,0 +1,19 @@
+const response = await fetch(
+    'https://scrape.smartproxy.com/v1/tasks', {
+        method: 'POST',
+        body: {
+            target: 'amazon_bestsellers',
+            parse: true,
+            query: '2407760011',
+            domain: 'com',
+            locale: 'en_us',
+            device_type: 'desktop'
+        },
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic AUTH'
+        },
+    }
+).catch(error => console.log(error));
+
+console.log(response)
