@@ -9,7 +9,7 @@
 - [Authentication](#authentication)
 - [Amazon](#amazon)
 - [Wayfair](#wayfair)
-- [Other Sites](#other sites)
+- [Other Sites](#other_sites)
 - [Targets](#targets)
 - [Parameters](#parameters)
 - [Response Codes](#response-codes)
