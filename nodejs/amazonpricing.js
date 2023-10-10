@@ -1,5 +1,5 @@
 const response = await fetch(
-    'https://scrape.smartproxy.com/v1/tasks', {
+    'https://scraper-api.smartproxy.com/v2/scrape', {
         method: 'POST',
         body: {
             target: 'amazon_pricing',
