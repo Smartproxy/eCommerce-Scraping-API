@@ -36,10 +36,10 @@ You can also retrieve Amazon reviews, as well as questions and answers about a p
 
 ### Amazon Product
 
-API Link: https://scrape.smartproxy.com/v1/tasks
+API Link: https://scraper-api.smartproxy.com/v2/scrape
 
 ```http
-  POST /tasks
+  POST /scrape
 ```
 
 ### Target: ```amazon```(mostly parseable)
