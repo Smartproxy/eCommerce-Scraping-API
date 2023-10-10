@@ -11,7 +11,7 @@ $params = array(
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://scrape.smartproxy.com/v1/tasks');
+curl_setopt($ch, CURLOPT_URL, 'https://scraper-api.smartproxy.com/v2/scrape');
 curl_setopt($ch, CURLOPT_USERPWD, 'SPusername' . ':' . 'SPpassword');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
