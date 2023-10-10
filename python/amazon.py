@@ -10,7 +10,7 @@ username = 'SPusername'
 password = 'SPpassword'
 
 response = requests.post(
-    'https://scrape.smartproxy.com/v1/tasks',
+    'https://scraper-api.smartproxy.com/v2/scrape',
     json = task_params,
     auth = (username, password)
 )
