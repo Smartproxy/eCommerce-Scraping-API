@@ -1,7 +1,9 @@
 
 # eCommerce Scraping API
 
-[<img src="https://i.ibb.co/Jd5KFL3/e-Commerce-1.png">](https://dashboard.smartproxy.com/register?utm_source=Github&utm_medium=banner&utm_campaign=eCommerce)
+<p align="center">
+    <a href="https://dashboard.smartproxy.com/register?page=ecommerce-scraping-api%2Fpricing&utm_source=socialorganic&utm_medium=social&utm_campaign=github_ecommerce_scraper" ><img src="https://i.imgur.com/v707ui6.png"></a>
+</p>
 
 
 ## List of contents
