@@ -5,6 +5,7 @@
     <a href="https://dashboard.smartproxy.com/register?page=ecommerce-scraping-api%2Fpricing&utm_source=socialorganic&utm_medium=social&utm_campaign=github_ecommerce_scraper" ><img src="https://i.imgur.com/v707ui6.png"></a>
 </p>
 
+[![](https://dcbadge.vercel.app/api/server/gvJhWJPaB4)](https://discord.gg/sCr34yVDVB)
 
 ## List of contents
 - [Introduction](#introduction)
